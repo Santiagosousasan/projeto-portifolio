@@ -92,6 +92,7 @@ section#ficha h1 {
   color: var(--destaque);
   margin: 15px 0px;
   font-size: 1.5em;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -144,4 +145,45 @@ article h2 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skill-container .nome {
+  color: var(--texto);
+  font-weight: bold;
+}
+
+#skill-container .porcent {
+  color: var(--destaque);
+  font-weight: bold;
+}
+
+#skill-container .barra {
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+
+#skill-container .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
