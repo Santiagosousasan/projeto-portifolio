@@ -35,10 +35,20 @@ header {
   z-index: 1;
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #menu ul {
@@ -140,8 +150,6 @@ article h2 {
   width: 100%;
   margin: auto;
   aspect-ratio: 16/9;
-  border: 5px solid var(--destaque);
-  border-radius: 5px;
 }
 
 .video-container iframe {
@@ -150,6 +158,7 @@ article h2 {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
 }
 
 #skill-container {
